@@ -25,4 +25,7 @@ public class Stack {
         }
         System.out.println();
     }
+    public int getLengthStack(){
+        System.out.println(lengthStack);
+    }
 }
