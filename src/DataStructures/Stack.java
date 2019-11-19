@@ -6,7 +6,12 @@ public class Stack {
     private boolean isStack;
     private int[] stack;
 
+    public Stack(String ... data){
+        lengthStack = data.length;
+
+    }
     public Stack(int ... data){
+
         lengthStack = data.length;
         stack = data;
     }
@@ -25,7 +30,8 @@ public class Stack {
         }
         System.out.println();
     }
-    public int getLengthStack(){
+    public int getLengthtack(){
         System.out.println(lengthStack);
+        return 0;
     }
 }
