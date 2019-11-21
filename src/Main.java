@@ -1,14 +1,21 @@
-import Collections.*;
+import Trees.*;
 public class Main {
     public static void main(String[] args) {
-        Element<Integer> e1 = new Element<>(5);
-        Element<String> e2 = new Element<>("Hello");
-        LinkedList ll = new LinkedList(e1);
-        System.out.println(ll.getLast().show());
-        ll.append(e2);
-        System.out.println(ll.getLength());
-        System.out.println(ll.getByPosition(1).show());
-        ll.insert(e2, 0);
-        System.out.println(ll.getByPosition(0).show());
+        Node<Integer> e1 = new Node<>(10, 10);
+        TreeMap<Integer> tMap = new TreeMap<>(e1);
+        System.out.println(tMap.get(10));
+        tMap.addNode(5, 5);
+        tMap.addNode(1, 1);
+        tMap.addNode(4, 4);
+        tMap.addNode(35, 35);
+        tMap.addNode(20, 20);
+        tMap.addNode(17, 17);
+        tMap.addNode(31, 31);
+        tMap.addNode(99, 99);
+        System.out.println(tMap.get(16));
+        tMap.removeNode(5);
+        tMap.removeNode(35);
+        tMap.removeNode(20);
+        tMap.removeNode(99);
     }
 }

@@ -1,4 +1,4 @@
-package DataStructures;
+package Collections;
 import java.util.Arrays;
 
 public class Stack {
